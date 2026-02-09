@@ -1,0 +1,135 @@
+.contact-section {
+  background: var(--primary);
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-info {
+  padding: 20px;
+}
+
+.shadow-contact {
+  flex: 1;
+  box-shadow: 4px 6px 10px var(--contact-shadow);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-contact:hover {
+  transform: translateY(-9px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info p {
+  margin-bottom: 30px;
+}
+
+.info-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--card);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.info-content h3, h4 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+.address-block {
+  font-style: normal;
+}
+
+.contact-hover:hover {
+  color: var(--accent);
+}
+
+.contact-form {
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #ff4444;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-status {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-status.success {
+  background: rgba(0, 200, 83, 0.1);
+  color: #00c853;
+  border: 1px solid #00c853;
+}
+
+.form-status.error {
+  background: rgba(255, 68, 68, 0.1);
+  color: #ff4444;
+  border: 1px solid #ff4444;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,117 @@
+.about-section {
+  background: var(--secondary);
+}
+
+/* Layout */
+.about-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Text */
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* Certifications */
+.certifications {
+  margin-top: 40px;
+}
+
+.certifications h3 {
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.cert-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.cert-item .cert-link {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.cert-item .cert-link:hover {
+  color: var(--changePrimary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Image Section */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+/* Border Hover Effect */
+.image-border {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  z-index: 0;
+  transition: var(--transition);
+}
+
+.image-container:hover .image-border {
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  transition: var(--transition) ;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .about-image {
+    margin: 30px 0 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container {
+    width: 280px;
+    height: 280px;
+  }
+}

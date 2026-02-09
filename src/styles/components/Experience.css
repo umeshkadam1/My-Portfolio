@@ -1,0 +1,72 @@
+.experience-section {
+  background: var(--secondary);
+}
+
+/* Timeline icon */
+.timeline-icon {
+  position: absolute;
+  top: 6px;
+  right: -15px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary);
+  padding: 15px;
+  box-shadow: 0 0 6px rgba(83, 109, 254, 0.6);
+  z-index: 10;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(83, 109, 254, 0.8);
+}
+
+/* Left/Right adjustments */
+.timeline-item.right .timeline-icon {
+  left: -15px;
+  right: auto;
+}
+
+/* Bullet list styling */
+.dot-list {
+  margin-top: 12px;
+  padding-left: 18px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.dot-list li {
+  list-style-type: circle;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.designation {
+  margin-bottom: 6px;
+  color: var(--text);  
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .timeline-icon {
+    left: 15px;
+    right: auto;
+  }
+
+  .timeline-item.right .timeline-icon {
+    left: 15px;
+    right: auto;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .dot-list {
+    font-size: 0.9rem;
+  }
+}
