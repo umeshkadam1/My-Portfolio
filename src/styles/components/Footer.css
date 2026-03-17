@@ -82,6 +82,10 @@
   font-size: 1.1rem;
 }
 
+.my-name {
+  margin-left: 4px;
+}
+
 @media (max-width: 920px) {
   .footer-inner {
     flex-direction: column;

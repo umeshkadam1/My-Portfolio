@@ -108,8 +108,7 @@
 .image-wrapper {
   width: 450px;
   height: 450px;
-  /* background: linear-gradient(65deg, var(--accent), var(--primary)); */
-  background: var(--gradient-color-bg);
+  background: linear-gradient(65deg, var(--accent), var(--primary));
   border-radius: 50%;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
   position: relative;

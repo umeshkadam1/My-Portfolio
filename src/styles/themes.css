@@ -29,12 +29,6 @@
   --changeSecondary-dark: #d803fd;
   --changeThird-dark: #f55905;
 
-  --gradient-color-bg: linear-gradient(
-    180deg,
-    rgba(247, 1, 120, 1) 0%,
-    rgba(160, 8, 156, 1) 51%,
-    rgba(99, 13, 178, 1) 100%
-  );
 
   /* Common Variables */
   --primary: var(--primary-dark);

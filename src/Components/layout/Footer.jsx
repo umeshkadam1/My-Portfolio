@@ -1,24 +1,26 @@
-import navLinks from '../../utils/navbarLinks.js';
-import '../../styles/components/Footer.css';
-import { faCodepen, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import navLinks from "../../utils/navbarLinks.js";
+import "../../styles/components/Footer.css";
+import {
+  faCodepen,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
-
   const year = new Date().getFullYear();
 
   return (
     <footer className="footer">
       <div className="container">
-
         <div className="footer-inner">
-
           {/* About section */}
           <aside className="footer-side info-one">
             <h2>Umesh Kadam</h2>
             <p className="footer-col footer-label">
-              Web Developer based in Navi Mumbai, India. I build high quality, responsive and user focused digital experiences.
+              Web Developer based in Navi Mumbai, India. I build high quality,
+              responsive and user focused digital experiences.
             </p>
           </aside>
 
@@ -87,40 +89,39 @@ const Footer = () => {
 
             <p>
               <strong className="contact-line">Email:</strong>
-              <a
-                href="mailto:umeshkadam0101@gmail.com"
-                title="Send Email"
-              >
+              <a href="mailto:umeshkadam0101@gmail.com" title="Send Email">
                 umeshkadam0101@gmail.com
               </a>
             </p>
 
             <p>
               <strong className="contact-line">Phone:</strong>
-              <a href="tel:9322348144" title='Send Message'>9322348144</a>
+              <a href="tel:9322348144" title="Send Message">
+                9322348144
+              </a>
             </p>
           </div>
         </div>
 
         <div className="footer-copyright">
           <p className="copyright">
-            &copy; {year} Umesh Kadam. All rights reserved.
-            Designed and Developed by
+            &copy; {year} Umesh Kadam. All rights reserved. Designed and
+            Developed by 
             <a
               href="https://github.com/umeshkadam1"
               rel="noopener noreferrer"
               target="_blank"
               title="Visit Developer GitHub"
+              className="my-name"
             >
               Umesh Kadam
-            </a>.
+            </a>
+            .
           </p>
         </div>
-
       </div>
     </footer>
   );
 };
 
 export default Footer;
-

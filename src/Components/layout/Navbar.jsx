@@ -9,7 +9,7 @@ import {
   faBars,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../assets/My_Logo.webp";
+// import logo from "../../assets/My_Logo.webp";
 
 const RETRY_DELAY_MS = 100; // time between checks for sections
 const MAX_RETRIES = 50; // stop after ~5 seconds (50 * 100ms)
@@ -169,7 +169,8 @@ const Navbar = () => {
         {/* Logo */}
         <div className="logo-container" onClick={closeMenu}>
           <div className="logo-img" aria-hidden="true">
-            <img src={logo} alt="Umesh Kadam Logo" />
+            <img src="/My_Logo.webp" alt="Umesh Kadam Logo" />
+            {/* <img src="/Logo.png" alt="Umesh Kadam Logo" /> */}
           </div>
           <a href="#home" className="logo-text">
             UmeshK
