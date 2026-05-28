@@ -1,4 +1,6 @@
 import flightImg from "../../src/assets/flightImage.webp";
+import fintrack from "../../src/assets/FinTrack.webp";
+
 export const projectsData = [
   {
     id: 1,
@@ -47,21 +49,21 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Project 1",
-    description: "A comprehensive e-commerce platform with analytics",
+    title: "Financial Dashboard",
+    description:
+      "Real-time calculation of your Total Balance, Income, and Expenses",
     detailedDescription:
-      "Built with React for the frontend and Node.js for the backend, this dashboard provides merchants with real-time sales data, inventory tracking, and customer behavior analytics. Integrated with payment gateways and shipping APIs.",
-    image:
-      "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80",
-    techs: ["React", "Node.js", "MySQL", "Chart.js"],
+      "A modern and responsive Finance Dashboard built using React.js and Tailwind CSS. The application includes dashboard analytics, transaction management, role-based access control, interactive charts, filtering, sorting, search functionality, and dynamic financial insights.",
+    image: `${fintrack}`,
+    techs: ["React.js", "Tailwind CSS", "Lucide React", "Recharts"],
     features: [
-      "Real-time sales analytics",
-      "Inventory management system",
-      "Customer behavior tracking",
-      "Responsive design for all devices",
+      "Real-time balance tracker with interactive Area and Pie charts.",
+      "Multi-column sorting, type/category filters, real-time search, and full CRUD operations (Admin only).",
+      "Toggle between Admin (read-write) and Viewer (read-only) modes dynamically.",
+      "Instant download of filtered transactions as a spreadsheet-ready .csv file.",
     ],
-    liveDemo: "#",
-    viewCode: "#",
+    liveDemo: "https://finance-dashboard-pearl-chi.vercel.app/",
+    viewCode: "https://github.com/umeshkadam1/Finance-Dashboard",
   },
   {
     id: 4,
@@ -99,5 +101,4 @@ export const projectsData = [
     liveDemo: "#",
     viewCode: "#",
   },
-  
 ];
