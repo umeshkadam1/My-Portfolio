@@ -14,7 +14,7 @@ import {
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faDatabase } from "@fortawesome/free-solid-svg-icons";
-import "../../styles/components/skills.css";
+import "../../styles/components/Skills.css";
 
 const Skilled = () => {
   const [ref, inView] = useInView({
