@@ -18,6 +18,21 @@ const experiences = [
       "Ensured precise conversion of physical documents into digital format.",
     ],
   },
+  {
+    title: "Operation Executive",
+    designation: "Settlement Executive",
+    company: "Stock Holding Service Limited",
+    duration: "Feb 2026 - Present",
+    responsibilities: [
+      "Generated, validated, and uploaded Daily Holding Reports to NSE while ensuring regulatory compliance and data accuracy.",
+      "Performed segregation checks across DP Data, HS Data, Retained Securities, EPI, MTF Collateral and Pool Valuation to ensure accurate reconciliation.",
+      "Executed auction closeout entries and supported timely settlement processing.",
+      "Prepared and uploaded shortage reports to BSE within prescribed regulatory timelines.",
+      "Performed Pool Reconciliation by retrieving data from the NSDL Speed-e portal and reconciling client holdings with internal records.", 
+      "Managed reconciliation activities for BSE F&O and NSE F&O collateral using BMC and Collateral Management systems.", 
+      "Utilized MS Excel for data validation, reconciliation, report preparation, and analysis using functions such as VLOOKUP/XLOOKUP, Pivot Tables, IF, IFError, SumIF, Subtotal, and filtering techniques.",
+    ],
+  },
 ];
 
 const Experience = () => {
